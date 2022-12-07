@@ -26,11 +26,11 @@ ucr3_crime_by_district_over_time = all_crime_by_district_over_time[all_crime_by_
 # crime by street
 all_crime_by_street_over_time = crime_data[['STREET', 'DISTRICT', 'UCR_PART']].dropna()
 
-all_crime_by_street_over_time = all_crime_by_street_over_time.groupby(['STREET', 'DISTRICT', 'UCR_PART']).value_counts().to_frame().reset_index().set_axis(['STREET', 'DISTRICT', 'UCR_PART', 'FREQUENCY'], axis=1).sort_values(by='FREQUENCY', ascending=False)[:20]
-all_crime_by_street_over_time_2 = all_crime_by_street_over_time.reset_index().drop(columns=['UCR_PART']).groupby(['STREET', 'DISTRICT'])['FREQUENCY'].sum().to_frame().sort_values(by='FREQUENCY', ascending=False).reset_index()
-ucr1_crime_by_street_over_time = all_crime_by_street_over_time[all_crime_by_street_over_time['UCR_PART'] == 'Part One'].sort_values(by='FREQUENCY', ascending=False)
-ucr2_crime_by_street_over_time = all_crime_by_street_over_time[all_crime_by_street_over_time['UCR_PART'] == 'Part Two'].sort_values(by='FREQUENCY', ascending=False)
-ucr3_crime_by_street_over_time = all_crime_by_street_over_time[all_crime_by_street_over_time['UCR_PART'] == 'Part Three'].sort_values(by='FREQUENCY', ascending=False)
+all_crime_by_street_over_time = all_crime_by_street_over_time.groupby(['STREET', 'DISTRICT', 'UCR_PART']).value_counts().to_frame().reset_index().set_axis(['STREET', 'DISTRICT', 'UCR_PART', 'FREQUENCY'], axis=1).sort_values(by='FREQUENCY', ascending=False)
+all_crime_by_street_over_time_2 = all_crime_by_street_over_time.reset_index().drop(columns=['UCR_PART']).groupby(['STREET', 'DISTRICT'])['FREQUENCY'].sum().to_frame().sort_values(by='FREQUENCY', ascending=False).reset_index()[:20]
+ucr1_crime_by_street_over_time = all_crime_by_street_over_time[all_crime_by_street_over_time['UCR_PART'] == 'Part One'].sort_values(by='FREQUENCY', ascending=False)[:20]
+ucr2_crime_by_street_over_time = all_crime_by_street_over_time[all_crime_by_street_over_time['UCR_PART'] == 'Part Two'].sort_values(by='FREQUENCY', ascending=False)[:20]
+ucr3_crime_by_street_over_time = all_crime_by_street_over_time[all_crime_by_street_over_time['UCR_PART'] == 'Part Three'].sort_values(by='FREQUENCY', ascending=False)[:20]
 print(all_crime_by_street_over_time_2)
 
 # plotting
@@ -45,7 +45,7 @@ datasets_info = {
     'y_label': 'Number of Crimes',
 }
 datasets = [ucr1_crime_by_district_over_time, ucr2_crime_by_district_over_time, ucr3_crime_by_district_over_time]
-titles = ['UCR1 Crimes by District', 'UCR2 Crimes by District', 'UCR3 Crimes by District']
+titles = ['Top UCR1 Crimes by District', 'Top UCR2 Crimes by District', 'Top UCR3 Crimes by District']
 
 # district p1
 fig1, ax1 = plt.subplots(ncols=3, figsize=(21, 7))
@@ -68,7 +68,7 @@ fig2, ax2 = plt.subplots(figsize=(20, 7))
 fig2.subplots_adjust(hspace=.4, wspace=-.8)
 
 p1 = sns.lineplot(ax=ax2, x='OCCURRED_ON_DATE', y='FREQUENCY', hue='DISTRICT', style='UCR_PART', data=all_crime_by_district_over_time)
-p1.set(xlabel='Date (Month)', ylabel='Number of Crimes', title='All Crimes by District')
+p1.set(xlabel='Date (Month)', ylabel='Number of Crimes', title='Top Crimes by District')
 
 ax2.legend(bbox_to_anchor=(1.18, 1), loc='upper right', borderaxespad=0)
 fig2.subplots_adjust(right=0.84, left=.05)
@@ -84,7 +84,7 @@ datasets_info = {
     'y_label': 'Number of Crimes',
 }
 datasets = [ucr1_crime_by_street_over_time, ucr2_crime_by_street_over_time, ucr3_crime_by_street_over_time]
-titles = ['UCR1 Crimes by Street', 'UCR2 Crimes by Street', 'UCR3 Crimes by Street']
+titles = ['Top 10 UCR1 Crimes by Street', 'Top 10 UCR2 Crimes by Street', 'Top 10 UCR3 Crimes by Street']
 
 
 fig3, ax3 = plt.subplots(ncols=3, figsize=(21, 7))
@@ -108,7 +108,7 @@ fig4, ax4 = plt.subplots(figsize=(20, 7))
 fig4.subplots_adjust(hspace=.4, wspace=-.8)
 
 p1 = sns.barplot(ax=ax4, x='STREET', y='FREQUENCY', hue='DISTRICT', data=all_crime_by_street_over_time_2, dodge=False)
-p1.set(xlabel='Street Names', ylabel='Number of Crimes', title='All Crimes by Street')
+p1.set(xlabel='Street Names', ylabel='Number of Crimes', title='Top 10 Crimes by Street')
 ax4.tick_params(axis='x', rotation=45)
 ax4.legend(bbox_to_anchor=(1.18, 1), loc='upper right', borderaxespad=0)
 fig4.subplots_adjust(right=0.84, left=.05)
