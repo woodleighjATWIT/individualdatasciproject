@@ -40,6 +40,8 @@ Tools:
 ### Where are crimes most committed in boston?
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/Where_AllCrimesbyDistrict.png)
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/Where_URCCrimesbyDistrict.png)
+![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/Where_AllCrimesbyStreet_2.png)
+![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/Where_URCCrimesbyStreet_2.png)
 
 ### Answers
 These graphs provide many answers to a broad number of possible questions, including the questions this project set out to find the answers to. The answer to the first question, 'what crimes are being committed in boston?', is that there are many crimes being committed but there are a few that really stand out. Firstly, motor vehicle accidents are the number one most reported crime, followed by larceny. Looking at the graphs we can see that although serious UCR 1 crimes are committed, it is majority larceny based along with other acts of stealing. There are very few homicides being reported.
