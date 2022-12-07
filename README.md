@@ -6,9 +6,9 @@ The purpose of this projecte is primarily a demonstration of my skill with Numpy
 ## Selection of Data
 All model processing was done in PyCharm and can be found in what.py, when.py, where.py, and tools.py.
 
-**Unfortunately the dataset was too larget to upload into Github.**
+**Unfortunately the dataset was too larget to upload into Github. It can be found [here](https://www.kaggle.com/datasets/AnalyzeBoston/crimes-in-boston).**
 
-The data was sourced from [Kaggle](https://www.kaggle.com/datasets/AnalyzeBoston/crimes-in-boston) and contains three years of boston crime reports from Boston Police. There are a little under 320,000 total reports with 17 different properties: Incident Number, Offense Code, Offense Code Group, Offense Discritption, District, Reported Area, Shooting, Occurred on Date, Year, Month, Day of Week, Hour, UCR Part, Street, Lat, Long, and Location.
+The data, sourced from [Kaggle](https://www.kaggle.com/datasets/AnalyzeBoston/crimes-in-boston), contains three years of boston crime reports from Boston Police. There are a little under 320,000 total reports with 17 different properties: Incident Number, Offense Code, Offense Code Group, Offense Discritption, District, Reported Area, Shooting, Occurred on Date, Year, Month, Day of Week, Hour, UCR Part, Street, Lat, Long, and Location.
 
 This Projects primarily objective is to find information on the what, when, and where of crimes in Boston. 
 
@@ -55,9 +55,11 @@ The results for the second question, 'when are crimes being committed in boston?
 
 To help answer the last question, 'where are most crime committed in boston?', we can break down the police reports be district and street. Looking at the break down of crime by district there are immedietntly a few candidetes for most dangerous district that stand out. However, it is important to note that some districts see a higher traffic of people entering a leaving, which is bound to lead to an increase in crime. Roxbury and Dorchester are immeditately obvious pick for the districts with highest overall crime, along with UCR part 2 and 3 crimes. Interestingly though, the district with the highest level of UCR part 1 crime is the south end. This likely means that if you were looking for a place to get robbed, the South End is the best place. Additionally, there are a few obvious streets with a standout amount of crime reports. Boylston St, Blue Hill Ave, and Dorchester Ave all stand out among their peers as haivng a the highest amount of crime reports. These also happen to be some of the longest roads in Boston. So another potitental source of future research could be searching for a correlation between the length of a road to its crime rate. Althought, interestingly enough, the dirstrict that each of these high crime streets belong to also correlate with the highest crime rate districts we previously found.
 
+Looking at what other [research](https://viatravelers.com/is-boston-safe/#:~:text=1%20in%20every%20154%20people,cities%20in%20the%20United%20States.) has found, it appears as though, Boston does have a higher than the national average crime rate with the majority of serious crimes being made up of larceny related crime. Although, the majority of crimes committed in Boston are considered to be less dangerous crimes. Boston is considered to be safer than about 20 percent of other cities.
 
 
 ## Summary
+
 
 
 ## References
