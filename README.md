@@ -11,9 +11,11 @@ This Projects primarily objective is to find information on the what, when, and 
 
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/dataset_picture.PNG)
 
-It is of note that unfortunately the Shooting category is completely empty and thus was unable to be used. 
+It is important to note that UCR stands for Uniform Crime Reporting and represents a scale which crime can me measured on. More information can be found [here](https://ucr.fbi.gov/crime-in-the-u.s/2011/crime-in-the-u.s.-2011/offense-definitions), but essentially the worst of the crimes are categorized as Part 1 and decrease in severity as the part level increases to a maximum of 3. 
 
-Going forward we will predominantly be focused on Offense Code Group, District, Reported Area, Occurred on Date, Year, Month, Day of Week, Hour, and UCR Part properties, as these propeties are the keys to finding the answer to the what, when, and where of crimes. So, the first step in the data munging process was to drop all remaining unused categories. Following that, the 'OCCURRED_ON_DATE' column was converted into pandas datetime values so that future date caculations would be easier. Then, another ease of life change was made by adding the 'UCR_PART' column value onto the 'OFFENSE_CODE_GROUP' to help differenciate between the same offense code group with two different UCR levels.. For example, the 'Other' offense code group had reports with a UCR of both 2 and 3 so it helped furthur differentiate them in the data. Finally, the last step preformed in the data processing phase was to drop any values in the 'UCR_PART' column that had 'Other' instead of a numerical level because there were so few of these reports, making up 0.386 percent of that data.
+Going forward we will predominantly be focused on Offense Code Group, District, Reported Area, Occurred on Date, Year, Month, Day of Week, Hour, and UCR Part properties, as these propeties are the keys to finding the answer to the what, when, and where of crimes. So, the first step in the data munging process was to drop all remaining unused categories. Following that, the 'OCCURRED_ON_DATE' column was converted into pandas datetime values so that future date caculations would be easier. Then, another ease of life change was made by adding the 'UCR_PART' column value onto the 'OFFENSE_CODE_GROUP' to help differenciate between the same offense code group with two different UCR levels. For example, the 'Other' offense code group had reports with a UCR of both 2 and 3 so it helped furthur differentiate them in the data. Additionally, any values in the 'UCR_PART' column that had 'Other' instead of a numerical level was dropped because there were so few of these reports, making up 0.386 percent of that data. Finally, the last step was to replace all the police districts with the corresponding city district it covered. 
+
+![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/data_cleaner_code.PNG)
 
 ## Methods
 Tools:
@@ -22,5 +24,6 @@ Tools:
   * Github for hosting 
 
 ## Results
+
 
 
