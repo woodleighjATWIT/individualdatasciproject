@@ -40,10 +40,10 @@ Tools:
 ### Where are crimes most committed in boston?
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/Where_AllCrimesbyDistrict.png)
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/Where_URCCrimesbyDistrict.png)
-![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/Where_AllCrimesbyStreet_2.png)
-![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/Where_URCCrimesbyStreet_2.png)
+![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/Where_URCCrimesbyStreet_3.png)
+![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/Where_AllCrimesbyStreet_3.png)
 
-### Answers
+### Question Answers
 These graphs provide many answers to a broad number of possible questions, including the questions this project set out to find the answers to. The answer to the first question, 'what crimes are being committed in boston?', is that there are many crimes being committed but there are a few that really stand out. Firstly, motor vehicle accidents are the number one most reported crime, followed by larceny. Looking at the graphs we can see that although serious UCR 1 crimes are committed, it is majority larceny based along with other acts of stealing. There are very few homicides being reported.
 
 The results for the second question, 'when are crimes being committed?', were largely conclusive. Crime is relatively stagnent throughout the year expect for a small decline around the new year and a sharp increase in August all around the board. The sharp spike could potietnally be related to an increase in new people from all the new college freshman moving on campus. We also saw crime increase on Fridays and fall below normal levels for the rest of the weekend. Finally, we saw crime peak around 6pm during rush hour and slowly start to decrease as night falls.
