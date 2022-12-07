@@ -2,6 +2,7 @@
 ## Introduction
 The purpose of this projecte is primarily a demonstration of my skill with Numpy, Pandas, and Seaborn using a real-life dataset example. Although, I was drawn to this partiuclar dataset because, as a resident of boston, I was curious as to what our cities crime looks like and what kind of enviroment I'm living in. The primary objectives I'm setting out to explore are what crime are committed, when do crime happen, and where are crime happening. The finding of this project will provide insigt into what the underbelly of Boston is like.
 
+
 ## Selection of Data
 All model processing was done in PyCharm and can be found in what.py, when.py, where.py, and tools.py.
 
@@ -17,6 +18,7 @@ Going forward we will predominantly be focused on Offense Code Group, District, 
 
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/data_munging_code.PNG)
 
+
 ## Methods
 Tools:
   * PyCharm as an IDE 
@@ -30,18 +32,27 @@ Tools:
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/What_Top20CrimesOverTime.png)
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/What_CrimesOverTime.png)
 
-
-
 ### When are crimes most committed in boston?
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/When_AverageNumberofAllCrimeByMonth.png)
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/When_AverageNumberofCrimeByDayofTheWeek.png)
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/When_AverageNumberofAllCrimeByHour.png)
 
-
-
 ### Where are crimes most committed in boston?
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/Where_AllCrimesbyDistrict.png)
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/Where_URCCrimesbyDistrict.png)
 
+### Answers
+These graphs provide many answers to a broad number of possible questions, including the questions this project set out to find the answers to. The answer to the first question, 'what crimes are being committed in boston?', is that there are many crimes being committed but there are a few that really stand out. Firstly, motor vehicle accidents are the number one most reported crime, followed by larceny. Looking at the graphs we can see that although serious UCR 1 crimes are committed, it is majority larceny based along with other acts of stealing. There are very few homicides being reported.
 
+The results for the second question, 'when are crimes being committed?', were largely conclusive. Crime is relatively stagnent throughout the year expect for a small decline around the new year and a sharp increase in August all around the board. The sharp spike could potietnally be related to an increase in new people from all the new college freshman moving on campus. We also saw crime increase on Fridays and fall below normal levels for the rest of the weekend. Finally, we saw crime peak around 6pm during rush hour and slowly start to decrease as night falls.
+
+
+
+## Discussion
+
+
+## Summary
+
+
+## References
 
