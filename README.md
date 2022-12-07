@@ -6,7 +6,7 @@ The purpose of this project is primarily a demonstration of my skill with Numpy,
 ## Selection of Data
 All model processing was done in PyCharm and can be found in what.py, when.py, where.py, and tools.py.
 
-**Unfortunately the dataset was too large to upload into Github. It can be found [here](https://www.kaggle.com/datasets/AnalyzeBoston/crimes-in-boston).**
+**Unfortunately the dataset was too large to upload into Github. It can be found [here](https://www.kaggle.com/datasets/AnalyzeBoston/crimes-in-boston) or in the **
 
 The data, sourced from [Kaggle](https://www.kaggle.com/datasets/AnalyzeBoston/crimes-in-boston), contains three years of boston crime reports from Boston Police. There are a little under 320,000 total reports with 17 different properties: Incident Number, Offense Code, Offense Code Group, Offense Description, District, Reported Area, Shooting, Occurred on Date, Year, Month, Day of Week, Hour, UCR Part, Street, Lat, Long, and Location.
 
