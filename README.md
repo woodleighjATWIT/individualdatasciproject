@@ -27,26 +27,33 @@ Tools:
 
 
 ## Results
-### What kinds of crimes are committed in boston?
+These graphs provide many answers to a broad number of possible questions, including the questions this project set out to find the answers to.
+
+### [What](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/what.py) kinds of crimes are committed in boston?
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/AllReportedCrimesbyOffense.png)
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/What_Top20CrimesOverTime.png)
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/What_CrimesOverTime.png)
 
-### When are crimes most committed in boston?
+The answer to the first question, 'what crimes are being committed in boston?', is that there are many crimes being committed but there are a few that really stand out. Firstly, motor vehicle accidents are the number one most reported crime. This makes sense in Boston with its notoriously difficult and confusing roads. Its also of note that larceny is the most popular UCR Part 1 crime, even coming in third overall, while homicide is distinctly not present. There was only a total of 161 homicides reported, making up 0.05 percent of crime reports. So, although theres a larceny is popular, the odds of getting killed in boston are extremely low.
+
+
+
+### [When](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/when.py) are crimes most committed in boston?
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/When_AverageNumberofAllCrimeByMonth.png)
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/When_AverageNumberofCrimeByDayofTheWeek.png)
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/When_AverageNumberofAllCrimeByHour.png)
 
-### Where are crimes most committed in boston?
+The results for the second question, 'when are crimes being committed?', were largely conclusive. Crime is relatively stagnent throughout the year expect for a small decline around the new year and a sharp all around the board increase in August. The sharp spike could potietnally be related to an increase in new people from all the new college freshman moving onto campus. Crime also experienced an uptick on Fridays and fell below normal levels for the rest of the weekend. Finally, we saw crime peak around 6pm during rush hour and slowly start to decrease as night falls and morning comes around.
+
+
+### [Where](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/where.py) are crimes most committed in boston?
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/Where_AllCrimesbyDistrict.png)
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/Where_URCCrimesbyDistrict.png)
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/Where_URCCrimesbyStreet_3.png)
 ![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/Where_AllCrimesbyStreet_3.png)
 
 ### Question Answers
-These graphs provide many answers to a broad number of possible questions, including the questions this project set out to find the answers to. The answer to the first question, 'what crimes are being committed in boston?', is that there are many crimes being committed but there are a few that really stand out. Firstly, motor vehicle accidents are the number one most reported crime, followed by larceny. Looking at the graphs we can see that although serious UCR 1 crimes are committed, it is majority larceny based along with other acts of stealing. There are very few homicides being reported.
 
-The results for the second question, 'when are crimes being committed?', were largely conclusive. Crime is relatively stagnent throughout the year expect for a small decline around the new year and a sharp increase in August all around the board. The sharp spike could potietnally be related to an increase in new people from all the new college freshman moving on campus. We also saw crime increase on Fridays and fall below normal levels for the rest of the weekend. Finally, we saw crime peak around 6pm during rush hour and slowly start to decrease as night falls.
 
 
 
