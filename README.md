@@ -24,6 +24,10 @@ Tools:
   * Github for hosting 
 
 ## Results
+What kinds of crimes are committed in boston?
+![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/AllReportedCrimesbyOffense.png)
+![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/What_Top20CrimesOverTime.png)
+![](https://github.com/woodleighjATWIT/individualdatasciproject/blob/main/What_CrimesOverTime.png)
 
 
 
