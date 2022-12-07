@@ -94,12 +94,13 @@ for i in range(3):
 
     p = sns.barplot(ax=ax3[i], x=datasets_info['x'], y=datasets_info['y'], hue=datasets_info['hue'], data=datasets[i], dodge=False)
     p.set(xlabel=datasets_info['x_label'], ylabel=datasets_info['y_label'], title=titles[i])
-    ax3[i].tick_params(axis='x', rotation=45)
+    ax3[i].tick_params(axis='x', rotation=90)
     ax3[i].xaxis.labelpad = 10
+    ax3[i].legend(loc='upper right')
 
 
 #ax3[2].legend(ncol=6, bbox_to_anchor=(-1.8, 1.15), loc='upper left', borderaxespad=0, frameon=False)
-fig3.subplots_adjust(right=0.975, left=.05, bottom=.15)
+fig3.subplots_adjust(right=0.975, left=.05, bottom=.30)
 
 
 
@@ -111,7 +112,7 @@ p1 = sns.barplot(ax=ax4, x='STREET', y='FREQUENCY', hue='DISTRICT', data=all_cri
 p1.set(xlabel='Street Names', ylabel='Number of Crimes', title='Top 10 Crimes by Street')
 ax4.tick_params(axis='x', rotation=45)
 ax4.legend(bbox_to_anchor=(1.18, 1), loc='upper right', borderaxespad=0)
-fig4.subplots_adjust(right=0.84, left=.05)
+fig4.subplots_adjust(right=0.84, left=.05, bottom=.25)
 
 
 
